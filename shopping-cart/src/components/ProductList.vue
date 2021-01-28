@@ -2,7 +2,7 @@
   <div>
     <h1>Product List</h1>
     <ul>
-      <li v-for="product in products">{{product.title}} - {{product.price}}</li>
+      <li v-for="product in products" :key="product.name">{{product.title}} - {{product.price}}</li>
     </ul>
   </div>
 </template>
@@ -27,5 +27,4 @@ export default {
 </script>
 
 <style>
-
 </style>

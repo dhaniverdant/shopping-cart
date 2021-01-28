@@ -23,7 +23,7 @@ export default new Vuex.Store({
   mutations: {
     setProducts(state, products) {
       // update products
-      state.products;
+      state.products = products;
     },
   },
 });
